@@ -4,15 +4,15 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
-module = "{{name}}"
-author = "{{author}}"
-author-email = "{{email}}"
+module = "methodz"
+author = "deathbeds"
+author-email = "tony.fast@gmail.com"
 requires = [
-  {% for package in packages.split() %}"{{package}}", {% endfor %}
+  "pluggy", "multipledispatch", "decorator"
 ]
 keywords = []
-home-page = "{{url}}"
-license = "{{license}}"
+home-page = "https://github.com/tonyfast/__methodz"
+license = "BSD-3-Clause"
 description-file = "readme.md"
 
 
