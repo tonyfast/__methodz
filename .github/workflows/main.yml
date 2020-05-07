@@ -24,7 +24,7 @@ jobs:
         pip install .
     - name: Test with pytest
       run: |
-        pip install pytest pytest-cov shapely numpy scipy
+        pip install pytest pytest-cov shapely numpy scipy importnb
         pytest --doctest-modules
         
     - name: Build
